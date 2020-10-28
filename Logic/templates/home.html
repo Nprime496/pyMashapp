@@ -1,0 +1,31 @@
+<html>
+<body>
+<form action="{% url 'read' %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    
+    <label>Fichier de reference des parrains</label>
+
+    <div class="custom-file">
+    <input type="file" name="csv_reference_parrains" /><br>
+    </div>
+    <label>Fichier de reference des filleuls</label>
+
+    <div class="custom-file">
+    <input type="file" name="csv_reference_filleuls" /><br>
+    </div>
+    <span style="background-color:lightblue">
+    <label>Fichier des parrains</label>
+    <div class="custom-file">
+    <input type="file" name="csv_file_parrains" /><br>
+    </div>
+    <label>Fichier des filleuls</label>
+
+    <div class="custom-file">
+    <input type="file" name="csv_file_filleuls" /><br>
+    </div>
+    <input type="submit" value="Upload" />
+    </span>
+</form>
+<a href={% url 'send'%}>send mail</a>
+</body>
+</html>

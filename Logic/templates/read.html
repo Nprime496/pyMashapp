@@ -1,0 +1,19 @@
+<html>
+<head>
+</head>
+<body>
+{% for el in resultat.items%}
+<div style="border:2px">
+<img src={{el.0.1}} style="width:30px;height:30px">
+<label style="text-color:red">{{el.0.0}}</label>
+(
+{% for el2 in el.1%}
+<img src={{el2.1}} style="width:30px;height:30px">
+<label style="text-color:red">{{el2.0}}</label>,
+{% endfor %}
+)
+<div>
+<br><br>
+{% endfor%}
+</body>
+</html>

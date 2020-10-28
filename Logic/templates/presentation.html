@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={% static "style-presentation.css" %}>
+    <title>Presentation</title>
+</head>
+
+<body>
+    
+    <div >
+	{% for el in resultat.items%}
+
+    <!--<div class="center">-->
+
+    <div class="card p-2 row" style="width: 35rem; height:30rem">
+        <div class="card-header"><!--pour les parrains-->
+        <div class="card-columns">
+
+        <div class="card"  style="width:23rem;height:10rem">
+            <div class="additional">
+                <div class="user-card">
+                    <img style="width:110px;height:110px" src={{el.0.1}} class="center">
+                        <title id="title">Teacher</title>
+                        <!--<desc id="desc">Cartoon of a Caucasian woman smiling, and wearing black glasses and a purple
+                            shirt with white collar drawn by Alvaro Montoro.</desc>-->
+                    </svg>
+                </div>
+                <div class="more-info">
+                    <h1>{{el.0.0}}</h1>
+                    <div class="coords">
+                        <span>Parrain</span>
+                    </div>
+                </div>
+            </div>
+            <div class="general">
+                <h1>{{el.0.0}}</h1>
+                <!--<span class="more">Mouse over the card for more info</span>-->
+            </div>
+        </div>
+    </div>
+        </div>
+    <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+    {% for el2 in el.1%}
+
+        <div class="card"  style="width:23rem;height:8rem">
+            <div class="additional">
+                <div class="user-card">
+                    <img style="width:110px;height:110px" src={{el.0.1}} class="center">
+                        <title id="title">Student</title>
+                        <!--<desc id="desc">Cartoon of a Caucasian woman smiling, and wearing black glasses and a purple
+                            shirt with white collar drawn by Alvaro Montoro.</desc>-->
+                    </svg>
+                </div>
+                <div class="more-info">
+                    <h1>{{el2.0}}</h1>
+                    <div class="coords">
+                        <span>Filleul</span>
+                    </div>
+                </div>
+            </div>
+            <div class="general">
+                <h1>{{el2.0}}</h1>
+                <!--<span class="more">Mouse over the card for more info</span>-->
+            </div>
+        </div>
+    {% endfor %}
+    </li>
+    </ul>
+    </div>
+    	
+<!--</div>-->
+    {% endfor %}
+    </div>
+</body>
+
+</html>
