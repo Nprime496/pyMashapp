@@ -16,9 +16,12 @@ preference lists.
 Data is fed in algorithm by using a Google Form.
 
 ## Deploying
+To deploy the app on your computer, follow these simple steps:
 ```
 git clone https://github.com/Nprime496/pyMashapp
 py env/activate
+cd mashapp
+py manage.py runserver
 ```
 
 
