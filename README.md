@@ -1,17 +1,24 @@
-Il va s'agir de créer un formulaire sous la forme suivante:
-    - Première section (Perfectionniste)
-        * Qui est tu? (liste déroulante de tous les filleuls/parrains)
-        * Quel parrain aimerais-tu avoir? (s)
-        * Le numero de telephone
-    - Deuxième section (qui se ressemble s'assemble)
-        * Quelle est a préférence pour le sexe du parrain/filleul?
-        * score sexe
-        * Dans quelles villes as-tu étudié?
-        * score ville
-        * ....
+# MASHAPP
+## Description
 
-- remarques
-    * penser aux rideaux pour la journée jeux vidéos, pour que les powerpoints se voient bien
-    * attention aux dénominations "filleul/filleule" les questions doivent être neutres
+Mashapp is a web application used aiming to combine anything with anything according to interests, goals or anything that matter.
+
+## Dependencies
+
+* Django 3
+* Python 3
+
+## Actual state
+Mashapp relies on [Gale & Shapley algorithm](https://fr.wikipedia.org/wiki/Algorithme_de_Gale_et_Shapley) which uses some criterion combined to their scores to produce
+preference lists.
+
+## Pipeline
+Data is fed in algorithm by using a Google Form.
+
+## Deploying
+```
+git clone https://github.com/Nprime496/pyMashapp
+py env/activate
+```
 
 
