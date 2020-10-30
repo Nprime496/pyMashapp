@@ -5,8 +5,8 @@ Mashapp is a web application used aiming to combine anything with anything accor
 
 ## Dependencies
 
-* Django 3
-* Python 3
+* Django 3.*
+* Python 3.*
 
 ## Actual state
 Mashapp relies on [Gale & Shapley algorithm](https://fr.wikipedia.org/wiki/Algorithme_de_Gale_et_Shapley) which uses some criterion combined to their scores to produce
